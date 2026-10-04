@@ -1,24 +1,11 @@
-# README
+# Re-Former
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a mini-project focused on practicing form building on rails
 
-Things you may want to cover:
+From The Odin Project
 
-* Ruby version
+You can find the lesson at:
 
-* System dependencies
+- https://www.theodinproject.com/lessons/ruby-on-rails-forms
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+zmtk
