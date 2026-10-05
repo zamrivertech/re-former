@@ -2,6 +2,10 @@ class UsersController < ApplicationController
 
   def new
     @user = User.new
+    @email_placeholders = ['balls@guru.com', 'guru@balls.com', 
+                         'com@guru.balls', 'balls@balls.balls']
+    @username_placeholders = ['youareballs', 'ballsareyou',
+                             'domainballs', 'patrickjaneballs']
   end
 
   def create
