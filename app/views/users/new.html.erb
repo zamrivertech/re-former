@@ -1,5 +1,22 @@
 <h1>Create a new user</h1>
 
+<%= form_with model: @user do |form| %>
+  <div>
+    <%= form.label :username %>
+    <%= form.text_field :username %>
+  </div>
+  <div>
+    <%= form.label :email %>
+    <%= form.email_field :email %>
+  </div>
+  <div>
+    <%= form.label :password %>
+    <%= form.password_field :password %>
+  </div>
+  <%= form.submit %> 
+<% end %>
+
+<!--
 <form action='/users' accept-charset='UTF-8' method='post' data-turbo="false">
   <input
     type="hidden"
@@ -21,3 +38,4 @@
     <input type='submit' name='commit' value='Create User' data-disable-with='Create User'>
   </div>  
 </form>
+-->
