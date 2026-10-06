@@ -3,11 +3,13 @@
 <%= form_with model: @user do |form| %>
   <div>
     <%= form.label :username %>
-    <%= form.text_field :username, placeholder: @username_placeholders.sample %>
+    <%= form.text_field :username, placeholder: ['youareballs', 'ballsareyou',
+                             'domainballs', 'patrickjaneballs'].sample  %>
   </div>
   <div>
     <%= form.label :email %>
-    <%= form.email_field :email, placeholder: @email_placeholders.sample %>
+    <%= form.email_field :email, placeholder: ['balls@guru.com', 'guru@balls.com',
+                         'com@guru.balls', 'balls@balls.balls'].sample  %>
   </div>
   <div>
     <%= form.label :password %>
