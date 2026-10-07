@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
-
-  def new
+  before_action :set_user, only: %i[ edit update ]  
+def new
     @user = User.new
   end
 
@@ -15,10 +15,21 @@ class UsersController < ApplicationController
   end
 
   def edit
-    @user = User.find(params.expect(:id))
+  end
+  
+  def update 
+    if @user.update(user_params)
+      redirect_to user_path
+    else 
+      render :new, status: :unprocessable_entity
+    end
   end
 
   private
+    def set_user
+      @user = User.find(params.expect(:id))    
+    end 
+
     def user_params
       params.expect(user: [ :username, :email, :password ])
     end
